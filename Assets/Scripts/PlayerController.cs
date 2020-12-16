@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public GameObject spaceShip;
     //DataPlayer
     public PlayerData playerDataScript;
-    private float speed;
+    public float speed;
     public GameObject laserproyectile;
     //DataPlayer
     public Rigidbody2D Rb2d;
@@ -32,16 +32,20 @@ public class PlayerController : MonoBehaviour
     {
 
 
-        speed = playerDataScript.speed;//obtenemos la velocidad de la nave actual guardada en ScriptableObject PlayerData
+        speed = 2f;
+
+
+        //obtenemos la velocidad de la nave actual guardada en ScriptableObject PlayerData
         //comprobamos que esten asiganos los componentes necesarios
-        if (mouseTraget == null)
+        /*if (mouseTraget == null)
         {
             mouseTraget = transform;
         }
         if (mainCamera == null)
         {
             mainCamera = Camera.main;
-        }
+        }*/
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -57,7 +61,12 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
+    /*public void sendspeed()
+    {
+        
+        playerDataScript.getspeed(speed);//error
+        playerDataScript.speed = speed;
+    }     */
     public void Movemment()
     {
 
@@ -66,8 +75,8 @@ public class PlayerController : MonoBehaviour
             
             mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             mouseWorldPosition.z = 0;
-
-            transform.position = Vector3.MoveTowards(transform.position, mouseWorldPosition, speed * Time.deltaTime);
+            
+            transform.position = Vector3.MoveTowards(transform.position, mouseWorldPosition, playerDataScript.speed * Time.deltaTime);//
 
         }
         

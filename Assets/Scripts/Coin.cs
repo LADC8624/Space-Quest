@@ -60,6 +60,7 @@ public class Coin : MonoBehaviour
     public PlayerController playerControllerScript;
     private void Start()
     {
+        
         enemySoundsScript = GameObject.FindGameObjectWithTag("Sounds").GetComponent<Sounds>();
 
     }
@@ -86,18 +87,19 @@ public class Coin : MonoBehaviour
     public void CleanScore()
     {
         coin = 0;
-        ScorePoints = 0;
-        enemy = 0;
-
-        //coins
-        score.text = coin.ToString();
-        playerDataSO.suma(int.Parse(score.GetComponent<Text>().text));
-        //score
-        Totalscore.text = ScorePoints.ToString();
-        playerDataSO.bestscore(int.Parse(Totalscore.GetComponent<Text>().text));
-        //enemies
-        enemyScore.text = enemy.ToString();
-        enemyValue = int.Parse(enemyScore.GetComponent<Text>().text);
+            ScorePoints = 0;
+            enemy = 0;
+            //coins
+            score.text = coin.ToString();
+           
+            //score
+            Totalscore.text = ScorePoints.ToString();
+          
+            //enemies
+            enemyScore.text = enemy.ToString();
+           
+        
+     
     }
     public void Bspeed()
     {
@@ -113,6 +115,9 @@ public class Coin : MonoBehaviour
             playerDataSO.speed += 1;
             DataMenu();
             Upgrades();
+            
+
+
         }
         if (spLVL == 6)
         {

@@ -24,11 +24,11 @@ public class HealthBar : MonoBehaviour
     public OutZone outZoneScript;
     private void Start()
     {
-
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
 

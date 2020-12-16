@@ -14,14 +14,14 @@ public class LaserPlayer : MonoBehaviour
     {
         soundsScript = GameObject.Find("MusicAndSounds").GetComponent<Sounds>();
         soundsScript.Laser();
-        laserSpeed = playerDataScript.speed * 7f;
+        laserSpeed = 20;
         Rb2d = GetComponent<Rigidbody2D>();
 
     }
     // Update is called once per frame
     void Update()
     {
-        Rb2d.velocity = transform.up * laserSpeed;
+        Rb2d.velocity = transform.up * laserSpeed;/////
     }
 
 

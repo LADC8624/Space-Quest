@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - O2
     - OutZone
     - PlayerController
+    - PlayerData
     - Sounds
     - SpawnArea
     - Windows
@@ -22,6 +23,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -42,13 +44,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -59,8 +55,6 @@ ScriptsOnlyBuild:
     - Class: 60
       Script: {instanceID: 0}
     - Class: 61
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 70
       Script: {instanceID: 0}
@@ -77,8 +71,6 @@ ScriptsOnlyBuild:
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9674}
@@ -114,6 +106,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10936}
     - Class: 114
       Script: {instanceID: 10958}
+    - Class: 114
+      Script: {instanceID: 11064}
     - Class: 114
       Script: {instanceID: 11074}
     - Class: 114
@@ -533,7 +527,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 412bec2969eea27145d47dea30dd613f
+      Hash: cb2270ccc84301dbe6a9f41b354c7ce7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -642,4 +636,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SpaceQuest.unity
-  playerPath: C:/Users/LADC/OneDrive/Escritorio/Proyectos/SpaceQuestExe/Space Quest.exe
+  playerPath: C:/Users/LADC/OneDrive/Escritorio/Nueva carpeta (3)/Space Quest.exe

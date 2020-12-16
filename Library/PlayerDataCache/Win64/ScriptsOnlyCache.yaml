@@ -643,4 +643,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SpaceQuest.unity
-  playerPath: C:/Users/LADC/OneDrive/Escritorio/Proyectos/SpaceQuestExe/Space Quest.exe
+  playerPath: C:/Users/LADC/OneDrive/Escritorio/Nueva carpeta (3)/Space Quest.exe

@@ -1677,7 +1677,6 @@ MonoBehaviour:
   mainCamera: {fileID: 519420031}
   anim: {fileID: 272071647}
   turbospeed: 0
-  secStop: 0
   mouseWorldPosition: {x: 0, y: 0, z: 0}
   lookAtDirection: {x: 0, y: 0, z: 0}
   shooting: 0
@@ -1686,6 +1685,7 @@ MonoBehaviour:
   healthBarScript: {fileID: 950328788}
   windowsScript: {fileID: 790965998}
   RunGame: 0
+  soundsScript: {fileID: 0}
 --- !u!4 &294073021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 592536584346097910, guid: a935858eaa8cf0e4b9a0eb24b57cc0d2,
@@ -3761,6 +3761,8 @@ MonoBehaviour:
   playerDataSO: {fileID: 11400000, guid: db386fbf73692d24584255686c8366d5, type: 2}
   playerControllerScript: {fileID: 280084599}
   soundsScript: {fileID: 538916202}
+  coinScript: {fileID: 0}
+  healthBarScript: {fileID: 0}
 --- !u!1 &815167808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,13 +4937,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b525d476303db73439676509dc37c520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valorHP: 0
   Bar: {fileID: 950328786}
   Health: 100
+  valortURBO: 0
   TurboBar: {fileID: 978277126}
   Turbo: 100
+  valorO2: 0
   O2Bar: {fileID: 1293284663}
   O2: 100
   playerControllerScript: {fileID: 280084599}
+  playerDataSO: {fileID: 0}
   outZoneScript: {fileID: 1472138911}
 --- !u!1 &978277123
 GameObject:
@@ -7113,7 +7119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1345122835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8206,7 +8212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1596271847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10930,7 +10936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1991465774
 MonoBehaviour:
   m_ObjectHideFlags: 0

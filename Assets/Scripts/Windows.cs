@@ -18,10 +18,10 @@ public class Windows : MonoBehaviour
     public HealthBar healthBarScript;
     private void Start()
     {
-        soundsScript.MenuSong();
+        /*soundsScript.MenuSong();
         coinScript.DataMenu();
         coinScript.Upgrades();
-        healthBarScript.BarUpdate();
+        healthBarScript.BarUpdate();*/
 
 
     }
@@ -64,8 +64,10 @@ public class Windows : MonoBehaviour
     {
 
         screens[3].SetActive(true);
+        //playerControllerScript.sendspeed();
         coinScript.CleanScore();
         healthBarScript.playagain();
+        //healthBarScript.BarUpdate();
         playerControllerScript.RunGame = true;
         MenuScreenoff();
         soundsScript.MenuSongStop();

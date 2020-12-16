@@ -7,9 +7,9 @@ public class PlayerData : ScriptableObject
 {
     //user
     public float speed;
-    public float Hp;
-    public float O2;
-    public float Turbo;
+    public float Hp;//20f
+    public float O2;//0.07f
+    public float Turbo;//0.6f
     
     public int SumCoins;
     //menu
@@ -58,5 +58,9 @@ public class PlayerData : ScriptableObject
             bestofscores = BestScore;
         }
     }
+    /*public void getspeed(float Sp)
+    {
+        speed = Sp;
+    }*/
 
 }
