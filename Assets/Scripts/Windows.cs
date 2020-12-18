@@ -18,12 +18,16 @@ public class Windows : MonoBehaviour
     public HealthBar healthBarScript;
     private void Start()
     {
-        /*soundsScript.MenuSong();
+        playerDataSO.LoadDataFromFile();Debug.Log("DataSaveCreated");
+        //soundsScript.MenuSong();
         coinScript.DataMenu();
         coinScript.Upgrades();
-        healthBarScript.BarUpdate();*/
-
-
+        //healthBarScript.BarUpdate();
+        //playerDataSO.SaveToFile();
+       
+        
+        
+        
     }
 
     private void FixedUpdate()
@@ -39,24 +43,28 @@ public class Windows : MonoBehaviour
     }
     public void MenuScreen()
     {
+        /*playerDataSO.SaveToFile();
+        playerDataSO.LoadDataFromFile();*/
         screens[1].SetActive(true);
         soundsScript.MenuSong();
         coinScript.DataMenu();
         //coinScript.CleanScore();
         GameOverScreenoff();
-
+        playerDataSO.SaveToFile();
 
 
     }
 
     public void GameOverScreen()
     {
-
+        /*playerDataSO.SaveToFile();*/
+        
         screens[2].SetActive(true);
         //coinScript.CleanScore();
         playerDataSO.TotalCoins();
         playerDataSO.Bscore();
         soundsScript.SurvivalMusicStop();
+        playerDataSO.SaveToFile();
         playerControllerScript.RunGame = false;
         //soundsScript.SurvivalMusicStop();
     }
@@ -65,6 +73,7 @@ public class Windows : MonoBehaviour
 
         screens[3].SetActive(true);
         //playerControllerScript.sendspeed();
+
         coinScript.CleanScore();
         healthBarScript.playagain();
         //healthBarScript.BarUpdate();
@@ -95,6 +104,7 @@ public class Windows : MonoBehaviour
     public void StoreScreen()
     {
         screens[5].SetActive(true);
+        playerDataSO.SaveToFile();
     }
     public void BlackScreen()
     {
@@ -106,7 +116,7 @@ public class Windows : MonoBehaviour
 
     public void StartScreenoff()
     {
-
+        playerDataSO.LoadDataFromFile(); Debug.Log("DataSaveCreated");
         screens[0].SetActive(false);
         BlackScreenoff();
     }
@@ -136,6 +146,7 @@ public class Windows : MonoBehaviour
     public void StoreScreenoff()
     {
         screens[5].SetActive(false);
+        playerDataSO.SaveToFile();
     }
     public void BlackScreenoff()
     {

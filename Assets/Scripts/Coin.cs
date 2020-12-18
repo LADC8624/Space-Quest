@@ -62,7 +62,8 @@ public class Coin : MonoBehaviour
     {
         
         enemySoundsScript = GameObject.FindGameObjectWithTag("Sounds").GetComponent<Sounds>();
-
+        DataMenu();
+        playerDataSO.SumCoins = 0;
     }
     public void Upgrades()
     {

@@ -6968,6 +6968,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125406401}
   m_CullTransparentMesh: 0
+--- !u!1 &1127533337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 592536584346097911, guid: a935858eaa8cf0e4b9a0eb24b57cc0d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 592536584102373963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1127574153
 GameObject:
   m_ObjectHideFlags: 0
@@ -13942,7 +13948,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthBarScript
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 950328788}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a935858eaa8cf0e4b9a0eb24b57cc0d2, type: 3}
 --- !u!1001 &2615044507563091468
@@ -14047,5 +14053,10 @@ PrefabInstance:
       propertyPath: attackRadius
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2615044506113113128, guid: e4d1b3345622b50459f595815fa8abaa,
+        type: 3}
+      propertyPath: drop.Array.data[1]
+      value: 
+      objectReference: {fileID: 1127533337}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4d1b3345622b50459f595815fa8abaa, type: 3}
