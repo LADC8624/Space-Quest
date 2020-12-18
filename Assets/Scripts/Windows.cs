@@ -187,4 +187,8 @@ public class Windows : MonoBehaviour
     {
         screens[7].SetActive(true);
     }
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }
